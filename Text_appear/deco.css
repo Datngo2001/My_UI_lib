@@ -1,0 +1,74 @@
+/*######### default #########*/
+body{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 100%;
+    display: block;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.row {
+    width: 100%;
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.row::after{
+    display: block;
+    clear: both;
+    content: "";
+}
+.col-1 {width: 8.33%};
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/*######### custom #########*/
+.banner{
+    background: url(banner.jpg);
+    background-size: cover;
+    background-position-y: center;
+    height: 100vh;
+}
+
+.quote img{
+    position: relative;
+    display: block;
+    margin: 10% 1px 10% 1px;
+}
+.quoteText{
+    margin: auto;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.7s;
+    height: auto;
+    position: relative;
+    width: 80%;
+}
+.col-6{
+    display: flex;
+
+}
+
+.quote .quoteText p,h2{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+/*######### appear effect #########*/
+.quoteAppear{
+    opacity: 1;
+    transform: translateY(0);
+}
+

@@ -1,0 +1,71 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+    grid-template-rows: repeat(4, 70px);
+    column-gap: 5px;
+    row-gap: 5px;
+    justify-content: center;
+    /* column-gap: 10px;
+    row-gap: 20px;
+    gap: 10px 20px;
+    justify-items: stretch;
+    align-items: stretch;
+    place-items: stretch;
+    justify-content: space-between; */
+
+    grid-template-areas: 
+        "a a b c"
+        "a a d d"
+        "e f k k"
+        "g h k k";
+}
+
+.a{
+    background-color: rgb(0, 247, 255);
+    /* grid-column: 1 / span 2;
+    grid-row: 1 / span 2; */
+    grid-area: a;
+}
+
+.b{
+    background-color: rgb(64, 209, 228);
+    grid-area: b;
+}
+
+.c{
+    background-color: rgb(20, 224, 180);
+    grid-area: c;
+}
+
+.d{
+    /* grid-column: 3 / span 2; */
+    background-color: rgb(144, 238, 144);
+    grid-area: d;
+}
+
+.e{
+    background-color: rgb(0, 247, 255);
+    grid-area: e;
+}
+
+.f{
+    background-color: rgb(20, 224, 180);
+    grid-area: f;
+}
+
+.g{
+    background-color: rgb(144, 238, 144);
+    grid-area: g;
+}
+
+.h{
+    background-color: rgb(44, 223, 89);
+    grid-area: h;
+}
+
+.k{
+    background-color: rgb(44, 223, 89);
+    /* grid-column: 3 / span 2;
+    grid-row: 3 / span 2; */
+    grid-area: k;
+}

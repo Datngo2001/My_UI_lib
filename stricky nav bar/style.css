@@ -1,0 +1,80 @@
+/*########## Default ########*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: whitesmoke;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+/*########## Custom ########*/
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    transition: 0.5s;
+}
+.logo{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    font-size: 40px;
+}
+.navBar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.navBar ul li{
+    list-style: none;
+    margin: 0 5px;
+}
+.navBar ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    font-size: 20px;    
+}
+.scrollDown{
+    background-color: white;
+}
+.dropDown{
+    display: none;
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+.dropped{
+    height: 180px;
+    background-color: whitesmoke;
+}
+.navBar ul.droppedMenu{
+    display: block;
+    position: absolute;
+    top: 50px;
+}
+
+/*########## mobile responsive ########*/
+@media(max-width: 780px){
+    .navBar{
+        padding: 5px 20px;
+    }
+    .logo{
+        font-size: 30px;
+    }
+    .navBar ul{
+        display: none;
+    }
+    .dropDown{
+        display: block;
+    }
+}
+
